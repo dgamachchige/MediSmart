@@ -18,7 +18,6 @@ public class PatientController {
     @Autowired
     private PatientService patientService;
 
-
     @RequestMapping(method = RequestMethod.POST)
     public void addNewPatient(@RequestBody Patient patient) {
         patientService.addPatient(patient);
